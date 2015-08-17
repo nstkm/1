@@ -1,4 +1,4 @@
-﻿var gulp = require("gulp"),
+var gulp = require("gulp"),
 		jade = require('gulp-jade'),
 		sass = require('gulp-sass'),
 		prettify = require('gulp-prettify'),
@@ -89,7 +89,7 @@ var log = function (error) {
 		''
 	].join('\n'));
 	this.end();
-}
+};
 
 // ====================================================
 // ====================================================
