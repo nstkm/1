@@ -1,1 +1,38 @@
-header.page-header
+﻿header.header
+	.header__top
+		.container
+			ul.header__socials
+				- var items = {'vk' : 'vkontakte', 'fb' : 'facebook', 'tw' : 'twitter'};
+				each value, key in items
+					li.header__socials-item
+						a(href="#" class="header__socials-link header__socials-link--" + key)= value
+			a.header__address(href='https://www.google.ru/maps/search/%D0%B3.+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+%D1%83%D0%BB.+%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+246,+%D0%BE%D1%84%D0%B8%D1%81+214/@58.562031,50.1024565,6z/data=!3m1!4b1' , target='_blank') г. Москва, ул. Новая 246, офис 214
+			a(href="tel:+79213221232").header__phone
+				sup.header__phone-code +7 (921)
+				span.header__phone-number 322 12 32
+	.header__bottom
+		.container
+			a(href='#').header__logo
+				img(src='../img/logo-big.png').header__logo-img
+				span.header__logo-text ЭпплShop
+			.header__search
+				form(action='' , method='get')
+					input.header__search-text(type='search', placeholder='iMac 27 дюймов')
+					input.header__search-button(type='submit' , value='Поиск')
+			.header__nav
+				ul.header__nav-list
+					li.header__nav-item
+						a.header__nav-link(href='#') Карта проезда
+					li.header__nav-item
+						a.header__nav-link(href='#') История заказов
+					li.header__nav-item
+						a.header__nav-link--basket(href='#') Корзина(3)
+						ul.basket__list
+						each products in ['iPhone 6', 'iPad Air Wi-Fi + Cellular 128GB - Silver', 'Macbook Air']
+							li.basket__item
+								a.basket__link= products
+
+
+
+
+
