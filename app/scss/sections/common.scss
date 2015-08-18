@@ -1,0 +1,13 @@
+﻿.container {
+    @include clearfix();
+    margin: 0 auto;
+    position: relative;
+    width:$container-width;
+}
+
+html {
+    height:100%;
+}
+body {
+    height:100%;
+}

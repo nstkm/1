@@ -1,0 +1,28 @@
+﻿.footer {
+		background: $bg-footer url(../img/footer-bg.png) repeat;
+		height: $footer-height;
+		margin-top: -$footer-height;
+		color: white;
+		.container {
+
+		}
+}
+.wrapper {
+		position: relative;
+		min-height: 100%;
+		min-width: 1010px;
+		height: auto!important;
+		overflow: hidden;
+		&:after {
+			content: "";
+			height: $footer-height;
+			display: block;
+		}
+}
+
+.footer__socials {
+	position: absolute;
+	right: 10px;
+	bottom:10px;
+	@include inlineblock();
+}
