@@ -25,12 +25,24 @@
 						a.header__nav-link(href='#') Карта проезда
 					li.header__nav-item
 						a.header__nav-link(href='#') История заказов
-					li.header__nav-item
-						a.header__nav-link--basket(href='#') Корзина(3)
-						ul.basket__list
-						each products in ['iPhone 6', 'iPad Air Wi-Fi + Cellular 128GB - Silver', 'Macbook Air']
-							li.basket__item
-								a.basket__link= products
+					li.header__nav-item--basket
+						a.header__nav-link(href='#') Корзина(3)
+						ul.header__basket-list
+								li.header__basket-item
+									a.header__basket-link(href="#")
+										img.header__basket-img(src='../img/basket-1.png')
+										.basket__text-wrap
+											.basket__text iPhone 6
+								li.header__basket-item
+									a.header__basket-link(href="#")
+										img.header__basket-img(src='../img/basket-2.png')
+										.basket__text-wrap
+											.basket__text iPad Air Wi-Fi + Cellular 128GB - Silver
+								li.header__basket-item
+									a.header__basket-link(href="#")
+										img.header__basket-img(src='../img/basket-3.png')
+										.basket__text-wrap
+											.basket__text Macbook Air
 
 
 
