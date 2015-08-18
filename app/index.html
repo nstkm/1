@@ -9,8 +9,10 @@
     <meta name="keywords" content="loftschool_homework">
     <meta name="author" content="Анастасия Ким">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon"><!-- build:css css/style.min.css -->
-    <link rel="stylesheet" href="css/main.css"><!-- endbuild -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- build:css css/main.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild-->
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -43,15 +45,15 @@
                   <li class="header__nav-item"><a href="#" class="header__nav-link">История заказов</a></li>
                   <li class="header__nav-item--basket"><a href="#" class="header__nav-link">Корзина(3)</a>
                     <ul class="header__basket-list">
-                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-1.png" class="header__basket-img">
+                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-1.png" alt="basket-img" class="header__basket-img">
                           <div class="basket__text-wrap">
                             <div class="basket__text">iPhone 6</div>
                           </div></a></li>
-                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-2.png" class="header__basket-img">
+                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-2.png" alt="basket-img" class="header__basket-img">
                           <div class="basket__text-wrap">
                             <div class="basket__text">iPad Air Wi-Fi + Cellular 128GB - Silver</div>
                           </div></a></li>
-                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-3.png" class="header__basket-img">
+                      <li class="header__basket-item"><a href="#" class="header__basket-link"><img src="../img/basket-3.png" alt="basket-img" class="header__basket-img">
                           <div class="basket__text-wrap">
                             <div class="basket__text">Macbook Air</div>
                           </div></a></li>
@@ -62,22 +64,85 @@
             </div>
           </div>
         </header>
-        <!-- Navigation-->
-        <nav class="nav">
+        <nav class="navigation">
           <div class="container">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__trigger">Мобильные телефоны</a></li>
-              <li class="nav__item"><a class="nav__trigger">Планшеты</a></li>
-              <li class="nav__item"><a class="nav__trigger">Mp3 плееры</a></li>
-              <li class="nav__item"><a class="nav__trigger">Персональные компьютеры</a></li>
-              <li class="nav__item"><a class="nav__trigger">Ноутбуки</a></li>
-              <li class="nav__item"><a class="nav__trigger">Apple TV</a></li>
-              <li class="nav__item"><a class="nav__trigger">Аксессуары</a></li>
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#" class="navigation__link">Мобильные телефоны</a></li>
+              <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link">Планшеты</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Mp3 плееры</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Персональные компьютеры</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Ноутбуки</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Apple TV</a></li>
+              <li class="navigation__item"><a href="#" class="navigation__link">Аксессуары</a></li>
             </ul>
           </div>
         </nav>
+        <!-- Main part-->
+        <div class="container">
+          <section class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог</a></li>
+              <li class="breadcrumbs__item breadcrumbs__item--active"><a class="breadcrumbs__link">iPad Air Wi-Fi + Cellular 128GB - Silver</a></li>
+            </ul>
+          </section>
+          <section class="product-desc">
+            <div class="product-desc__title">iPad Air Wi-Fi + Cellular 128GB - Silver</div>
+            <table class="product-desc__table">
+              <tr>
+                <td>Артикул</td>
+                <td>42787825</td>
+              </tr>
+              <tr>
+                <td>Опция</td>
+                <td>включена</td>
+              </tr>
+              <tr>
+                <td>Цвет</td>
+                <td>серебристый</td>
+              </tr>
+              <tr>
+                <td>Размер</td>
+                <td>1280*1245*90</td>
+              </tr>
+              <tr>
+                <td>Вес</td>
+                <td>200 г</td>
+              </tr>
+              <tr>
+                <td>Артикул</td>
+                <td>42787825</td>
+              </tr>
+              <tr>
+                <td>Опция</td>
+                <td>включена</td>
+              </tr>
+              <tr>
+                <td>Цвет</td>
+                <td>серебристый</td>
+              </tr>
+              <tr>
+                <td>Размер</td>
+                <td>1280*1245*90</td>
+              </tr>
+              <tr>
+                <td>Вес</td>
+                <td>200 г</td>
+              </tr>
+            </table>
+          </section>
+          <section class="product-about">
+            <div class="product-about__title">Пара слов о магазине</div>
+            <div class="product-about__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.</p>
+              <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+            </div>
+          </section>
+        </div>
+        <!-- footer-->
         <footer class="footer">
-          <div class="container"><a href="#" class="footer__logo"><img src="../img/logo-footer.png" class="footer__logo-img"><span class="footer__logo-text">ЭпплShop</span></a>
+          <div class="container"><a href="#" class="footer__logo"><img src="../img/logo-footer.png" alt="logo" class="footer__logo-img"><span class="footer__logo-text">ЭпплShop</span></a>
             <ul class="footer__menu-list">
               <li class="footer__menu-item">
                 <div class="footer__menu-title">О магазине<a class="footer__menu-link">О нас</a><a class="footer__menu-link">Наши цены</a><a class="footer__menu-link">Наши скидки</a><a class="footer__menu-link">Акции</a>
@@ -102,12 +167,15 @@
               <li class="header__socials-item"><a href="#" class="footer__socials-link footer__socials-link--tw">twitter</a></li>
             </ul>
           </div>
-        </footer><!-- build:js js/vendor.js -->
+        </footer>
+        <!-- build:js js/vendor.min.js-->
         <!-- bower:js-->
         <script src="/bower_components/jquery/jquery.js"></script>
-        <!-- endbower--><!-- endbuild -->
-        <!-- build:js js/main.js -->
-        <script src="js/main.js"></script><!-- endbuild -->
+        <!-- endbower-->
+        <!-- endbuild-->
+        <!-- build:js js/main.min.js-->
+        <script src="js/main.js"></script>
+        <!-- endbuild-->
       </div>
     </div>
   </body>

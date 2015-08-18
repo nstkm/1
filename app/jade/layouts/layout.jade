@@ -1,4 +1,6 @@
-﻿doctype html
+﻿include ../common/mixin.jade
+
+doctype html
 html(lang='ru-Ru')
 	include ../common/head.jade
 	body
@@ -9,7 +11,8 @@ html(lang='ru-Ru')
 			.main-content
 				// HEADER
 				include ../common/header.jade
-				// Navigation
 				+nav('navigation', ['Мобильные телефоны', 'Планшеты', 'Mp3 плееры', 'Персональные компьютеры', 'Ноутбуки', 'Apple TV', 'Аксессуары'], 1)
+				// Main part
 				block content
+				// footer
 				include ../common/footer.jade

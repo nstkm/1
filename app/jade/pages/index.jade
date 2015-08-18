@@ -1,1 +1,50 @@
 ﻿extends ../layouts/layout.jade
+block content
+	.container
+		section.breadcrumbs
+				ul.breadcrumbs__list
+					each items, index in ['Главная', 'Каталог', 'iPad Air Wi-Fi + Cellular 128GB - Silver']
+						li(class='breadcrumbs__item' + ((index == 2) ? ' breadcrumbs__item--active' : ''))
+							a.breadcrumbs__link= items
+		include ../common/slider.jade
+		section.product-desc
+			.product-desc__title iPad Air Wi-Fi + Cellular 128GB - Silver
+			table.product-desc__table
+				tr
+					td Артикул
+					td 42787825
+				tr
+					td Опция
+					td включена
+				tr
+					td Цвет
+					td серебристый
+				tr
+					td Размер
+					td 1280*1245*90
+				tr
+					td Вес
+					td 200 г
+				tr
+					td Артикул
+					td 42787825
+				tr
+					td Опция
+					td включена
+				tr
+					td Цвет
+					td серебристый
+				tr
+					td Размер
+					td 1280*1245*90
+				tr
+					td Вес
+					td 200 г
+		section.product-about
+			.product-about__title Пара слов о магазине
+			.product-about__text
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+				p Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+
+

@@ -31,7 +31,7 @@ gulp.task('jade', function() {
 });
 
 // Компилируем scss в css
-gulp.task('css', function () {
+gulp.task('sass', function () {
     gulp.src('app/scss/main.scss')
     .pipe(sass())
     .on('error', log)
@@ -62,7 +62,7 @@ gulp.task('wiredep', function () {
 // слежка и запуск задач
 gulp.task('watch', function () {
 	gulp.watch('app/jade/**/*.jade', ['jade']);
-	gulp.watch('app/scss/**/*.scss', ['css']);
+	gulp.watch('app/scss/**/*.scss', ['sass']);
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
 		'app/js/**/*.js',
