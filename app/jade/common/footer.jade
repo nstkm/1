@@ -1,4 +1,36 @@
-﻿<!-- build:js js/vendor.js -->
+﻿footer.footer
+	.container
+		a(href='#').footer__logo
+				img(src='../img/logo-footer.png').footer__logo-img
+				span.footer__logo-text ЭпплShop
+		ul.footer__menu-list
+			li.footer__menu-item
+				.footer__menu-title О магазине
+					each items in ["О нас", "Наши цены", "Наши скидки", "Акции"]
+						a.footer__menu-link= items
+			li.footer__menu-item
+				.footer__menu-title Каталог
+					each items in ['Смартфоны', "Планшеты", "Компьютеры", "Аксессуары"]
+						a.footer__menu-link= items
+			li.footer__menu-item
+				.footer__menu-title Контакты
+					each items in ['Телефоны', "Адреса", "Карта проезда", "Обратная связь"]
+						a.footer__menu-link= items
+		ul.footer__app
+				- var items = {'as' : 'App Store', 'gp' : 'Google Play'};
+				each value, key in items
+					li.header__socials-item
+						a(href="#" class="footer__app-link footer__app-link--" + key)= value
+		ul.footer__socials
+				- var items = {'vk' : 'vkontakte', 'fb' : 'facebook', 'tw' : 'twitter'};
+				each value, key in items
+					li.header__socials-item
+						a(href="#" class="footer__socials-link footer__socials-link--" + key)= value
+
+
+
+
+<!-- build:js js/vendor.js -->
 // bower:js
 script(src='/bower_components/jquery/jquery.js')
 // endbower
