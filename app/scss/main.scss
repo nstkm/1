@@ -12,10 +12,12 @@
 
 /* --------- fonts --------- */
 
-@import "_includes/_fonts";
+@import "_includes/fonts";
 
 /* --------- sections --------- */
 
 @import "sections/header.scss";
 @import "sections/footer.scss";
 @import "sections/common.scss";
+@import "sections/nav.scss";
+@import "sections/breadcrumbs.scss";

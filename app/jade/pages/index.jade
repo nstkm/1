@@ -4,8 +4,8 @@ block content
 		section.breadcrumbs
 				ul.breadcrumbs__list
 					each items, index in ['Главная', 'Каталог', 'iPad Air Wi-Fi + Cellular 128GB - Silver']
-						li(class='breadcrumbs__item' + ((index == 2) ? ' breadcrumbs__item--active' : ''))
-							a.breadcrumbs__link= items
+						li.breadcrumbs__item
+							a(href="#" class='breadcrumbs__link' + ((index == 2) ? ' breadcrumbs__link--active' : ''))= items
 		include ../common/slider.jade
 		section.product-desc
 			.product-desc__title iPad Air Wi-Fi + Cellular 128GB - Silver

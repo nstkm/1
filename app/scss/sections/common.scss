@@ -44,6 +44,7 @@ ul {
 			width: 100%;
 			p {
 				@include inlineblock();
+				font-family: "Elektra";
 				margin: 0;
 				padding: 0;
 				width: 33%;

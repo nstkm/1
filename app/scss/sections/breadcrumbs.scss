@@ -1,0 +1,33 @@
+﻿.breadcrumbs {
+	@include clearfix();
+	margin-bottom: 22px;
+		&__list{
+		float:left;
+		margin: 0;
+		}
+		&__item {
+			@include inlineblock();
+				&:before {
+					content : '> ' ;
+					color: $main-text;
+					font-size: 13px;
+				}
+				&:first-child {
+					&:before {
+						display: none;
+					}
+				}
+		}
+		&__link {
+			list-style: none;
+			font-size: 15px;
+			color: $main-blue;
+			&:hover {
+					color: $header-menu-hover;
+				}
+				&--active {
+					text-decoration: none;
+					color: $main-text;
+				}
+		}
+}

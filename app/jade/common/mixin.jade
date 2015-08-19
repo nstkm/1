@@ -3,5 +3,5 @@
 		.container
 			ul(class=className + "__list")
 				each item, ndx in items
-					li(class=className + "__item" + ((ndx == activeIndex) ? ' navigation__item--active' : ''))
-						a(href="#" class=className + "__link")= item
+					li(class=className + "__item")
+						a(href="#" class=className + "__link" + ((ndx == activeIndex) ? ' navigation__link--active' : ''))= item
