@@ -3,7 +3,7 @@
 	box-shadow: 0 1px 1px rgba(0,0,0,.15);
 	margin-bottom: 20px;
 		.container {
-			height: 40px;
+			min-height: 38px;
 		}
 		&__list {
 			margin: 0;
@@ -11,7 +11,6 @@
 			overflow: hidden;
 			position: relative;
 			width:100%;
-			text-align: center;
 				&:before {
 				content: "";
 				display: block;
@@ -28,7 +27,7 @@
 		}
 
 		&__item {
-			@include inlineblock();
+			float:left;
 
 		}
 		&__link {
@@ -38,12 +37,11 @@
 			text-decoration: none;
 			display: block;
 			padding: .7em .7em .7em 1.75em;
-	float: left;
-	text-decoration: none;
-	color: #5c7b98;
-	position: relative;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-	background-color: #f7f7f7;
+			float: left;
+			color: #5c7b98;
+			position: relative;
+			text-shadow: 0 1px 0 rgba(255,255,255,.5);
+			background-color: #f7f7f7;
 		&:hover {
 		background: #dce6f0;
 	}
@@ -52,31 +50,31 @@
 		content: "";
 		position: absolute;
 		top: 50%;
-		margin-top: -1.5em;
-		border-top: 1.5em solid transparent;
-		border-bottom: 1.5em solid transparent;
-		border-left: 1em solid;
-		right: -1em;
+		margin-top: -22px;
+		border-top: 22px solid transparent;
+		border-bottom: 24px solid transparent;
+		border-left: 15px solid;
+		right: -15px;
 	}
 
 	&:after {
 		z-index: 2;
-		border-left-color: #f7f7f7;
+		border-left-color: $nav-grey;
 		@include transition(all, .3s);
 	}
 
 	&:before {
-		border-left-color: #e3e3e3;
+		border-left-color: $nav-hover;
 		right: -1.1em;
 		z-index: 1;
 	}
 
 	&:hover:after {
-		border-left-color: #dce6f0;
+		border-left-color: $nav-hover;
 	}
 		}
 }
-.navigation__link--active .navigation__link--active:hover {
+.navigation__link--active ,.navigation__link--active:hover {
 		background:$main-blue;
 		color: white;
 		&:after {
