@@ -1,4 +1,10 @@
-﻿* { box-sizing: border-box }
+﻿* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
 .header {
 	&__top {
 		background:$header-top-bg;
@@ -77,6 +83,8 @@
 	&-img {
 			position: absolute;
 			top:24px;
+			max-width: 197px;
+			max-height: 57px;
 	}
 	&-text {
 		position: absolute;
@@ -86,23 +94,9 @@
 }
 .header__search {
 	position: absolute;
-	left:261px;
+	left:259px;
 	top:34px;
 	@include clearfix();
-			&-input {
-				box-sizing: border-box;
-			padding:10px;
-			font-size: 15px;
-			line-height: 17px;
-			font-family: "Elektra";
-			color:$placeholder;
-			width: 260px;
-			@include placecolor($color: $placeholder);
-			border: 1px solid $border-input;
-			border-right: 0;
-			float:left;
-			outline: none;
-			}
 			&-button {
 			float: right;
 			height: 35px;
@@ -115,18 +109,90 @@
 			margin:0;
 			}
 }
+.header__search .header__search-input {
+			box-sizing:border-box;
+			margin: 0;
+			padding:10px;
+			font-size: 15px;
+			line-height: 17px;
+			height:35px;
+			font-family: "Elektra";
+			color:$main-text;
+			width: 260px;
+			@include placecolor($color: $placeholder);
+			border: 1px solid $border-input;
+			border-right: 0;
+			float:left;
+			outline: none;
+			}
 .header__nav {
-	position: absolute;
-	right:0;
-	top:27px;
+		position: absolute;
+		right:0;
+		top:28px;
+	@include clearfix();
+		&-list {
+			list-style: none;
+			margin:0 ;
+		}
 		&-item {
+			float: left;
 			@include inlineblock();
+			margin-left: 15px;
+		}
+		&-link {
+			font-family: "Elektra";
+			padding:12px;
+			color: $main-blue;
+			font-size: 13px;
+			line-height: 13px;
+			&:hover {
+				color:$header-menu-hover;
+			}
 		}
 }
+.header__nav-link--basket {
+box-sizing: border-box;
+    width: 139px;
+    padding: 16px 0 15px 50px;
+    background-color: #FFF;
+    border: 1px solid #DCE6F0;
+    display: block;
+    margin-left: 3px;
+    color: #5C7B98;
+    position: relative;
+ }
+.header__nav-item--basket {
+	background: white;
+}
 .header__basket-list {
+	display:none;
 	position: absolute;
 	right:0;
 	width:245px;
 	border: 1px solid $border-input;
 	list-style:none;
+}
+
+.header__basket-img {
+		display: block;
+		max-width: 60px;
+		max-height: 50px;
+		position: absolute;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		margin: auto;
+		&--wrap {
+			position: relative;
+			float: left;
+			width:60px;
+		}
+}
+.basket__text-wrap {
+	float: right;
+}
+.header__basket-link {
+	display: block;
+	@include clearfix();
 }

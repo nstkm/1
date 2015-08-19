@@ -6,7 +6,8 @@
 		.container {
 		padding-top: 60px;
 		position: relative;
-		min-height: 228px-60px;
+		min-height: 228px;
+		overflow: hidden;
 		}
 }
 
@@ -45,9 +46,11 @@
 	&__item {
 		@include inlineblock();
 		margin-left: 72px;
-		margin: 0;
 		padding: 0;
 			&-inner {
+			margin-bottom: 6px;
+			font-family: "Elektra";
+			font-size: 15px;
 			list-style: none;
 			}
 			&:first-child {
@@ -56,10 +59,20 @@
 	}
 
 }
-.footer-menu {
-
-		&__link {
+.footer-menu__link {
 			line-height: 17px;
+			display: block;
+			color:white;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+
+.footer-menu {
+	&__title {
+		font-family: "Elektra-bold";
+		margin-bottom: 10px;
+		font-size: 15px;
 		}
 }
 .footer-socials__app {
@@ -74,8 +87,12 @@
 	padding: 0;
 	margin: 0;
 	&-item {
+		margin-left: 7px;
 		@include inlineblock();
-	}
+					&:first-child {
+					margin: 0;
+					}
+		}
 }
 .footer-socials {
 	right:0;
@@ -103,18 +120,18 @@
 		background: url(../img/sprite.png);
 		width: 42px;
 		height: 44px;
-		background-position: -135px -5px;
+		background-position: -137px -5px;
 		}
 		&--fb {
 		background: url(../img/sprite.png);
 		width: 42px;
 		height: 44px;
-		background-position: -188px -5px;
+		background-position: -190px -5px;
 		}
 		&--tw {
 		background: url(../img/sprite.png);
 		width: 42px;
 		height: 44px;
-		background-position: -240px -5px;
+		background-position: -242px -5px;
 		}
 }

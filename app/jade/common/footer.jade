@@ -9,19 +9,19 @@
 				ul.footer-menu__list-inner
 					each items in ["О нас", "Наши цены", "Наши скидки", "Акции"]
 						li.footer-menu__item-inner
-							a.footer-menu__link= items
+							a.footer-menu__link(href="#")= items
 			li.footer-menu__item
 				.footer-menu__title Каталог
 				ul.footer-menu__list-inner
 					each items in ['Смартфоны', "Планшеты", "Компьютеры", "Аксессуары"]
 						li.footer-menu__item-inner
-							a.footer-menu__link= items
+							a.footer-menu__link(href="#")= items
 			li.footer-menu__item
 				.footer-menu__title Контакты
 				ul.footer-menu__list-inner
 					each items in ['Телефоны', "Адреса", "Карта проезда", "Обратная связь"]
 						li.footer-menu__item-inner
-							a.footer-menu__link= items
+							a.footer-menu__link(href="#")= items
 		.footer-socials
 			ul.footer-socials__app
 					- var items = {'as' : 'App Store', 'gp' : 'Google Play'};
