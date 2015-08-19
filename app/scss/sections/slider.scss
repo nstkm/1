@@ -1,0 +1,9 @@
+﻿.product {
+		.container {
+			@include clearfix();
+		}
+		&__img {
+			float: left;
+			width:305px;
+		}
+}
