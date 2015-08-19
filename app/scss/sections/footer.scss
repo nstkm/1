@@ -4,25 +4,117 @@
 		margin-top: -$footer-height;
 		color: white;
 		.container {
-
-		}
-}
-.wrapper {
+		padding-top: 60px;
 		position: relative;
-		min-height: 100%;
-		min-width: 1010px;
-		height: auto!important;
-		overflow: hidden;
-		&:after {
-			content: "";
-			height: $footer-height;
-			display: block;
+		min-height: 228px-60px;
 		}
 }
 
-.footer__socials {
+.footer {
+		&__logo {
+			position: absolute;
+			left: 0;
+			top:100px;
+				&-text {
+					left: -9999px;
+					position: absolute;
+					top:0;
+						}
+				}
+		&__app {
+			margin-left: 120px;
+			position: absolute;
+			right:0;
+			top:72px;
+			&-item {
+				@include inlineblock();
+			}
+		}
+
+}
+.footer-menu{
+	&__list{
+	margin-left: 261px;
+	padding: 0;
+	font-size: 15px;
+		&-inner {
+		margin: 0;
+		padding: 0;
+		}
+	}
+	&__item {
+		@include inlineblock();
+		margin-left: 72px;
+		margin: 0;
+		padding: 0;
+			&-inner {
+			list-style: none;
+			}
+			&:first-child {
+				margin-left: 0px;
+			}
+	}
+
+}
+.footer-menu {
+
+		&__link {
+			line-height: 17px;
+		}
+}
+.footer-socials__app {
+	padding: 0;
+	margin-bottom: 30px;
+	&-item {
+		@include inlineblock();
+	}
+}
+.footer-socials__contacts {
+	@include clearfix();
+	padding: 0;
+	margin: 0;
+	&-item {
+		@include inlineblock();
+	}
+}
+.footer-socials {
+	right:0;
+	top: 65px;
 	position: absolute;
-	right: 10px;
-	bottom:10px;
-	@include inlineblock();
+}
+.footer-socials__app-link {
+		display: block;
+		text-indent: -9999px;
+	&--as {
+		width: 90px;
+		height: 32px;
+		background: url(../img/app-store.png);
+	}
+	&--gp {
+		width: 90px;
+		height: 32px;
+		background: url(../img/google-store.png);
+	}
+}
+.footer-socials__contacts-link {
+	display: block;
+	text-indent: -9999px;
+		&--vk {
+		background: url(../img/sprite.png);
+		width: 42px;
+		height: 44px;
+		background-position: -135px -5px;
+		}
+		&--fb {
+		background: url(../img/sprite.png);
+		width: 42px;
+		height: 44px;
+		background-position: -188px -5px;
+		}
+		&--tw {
+		background: url(../img/sprite.png);
+		width: 42px;
+		height: 44px;
+		background-position: -240px -5px;
+		}
 }

@@ -35,7 +35,7 @@
             <div class="container"><a href="#" class="header__logo"><img src="../img/logo-big.png" class="header__logo-img"><span class="header__logo-text">ЭпплShop</span></a>
               <div class="header__search">
                 <form action="" method="get">
-                  <input type="search" placeholder="iMac 27 дюймов" class="header__search-text">
+                  <input type="search" placeholder="iMac 27 дюймов" class="header__search-input">
                   <input type="submit" value="Поиск" class="header__search-button">
                 </form>
               </div>
@@ -145,29 +145,46 @@
     </div>
     <footer class="footer">
       <div class="container"><a href="#" class="footer__logo"><img src="../img/logo-footer.png" alt="logo" class="footer__logo-img"><span class="footer__logo-text">ЭпплShop</span></a>
-        <ul class="footer__menu-list">
-          <li class="footer__menu-item">
-            <div class="footer__menu-title">О магазине<a class="footer__menu-link">О нас</a><a class="footer__menu-link">Наши цены</a><a class="footer__menu-link">Наши скидки</a><a class="footer__menu-link">Акции</a>
-            </div>
+        <ul class="footer-menu__list">
+          <li class="footer-menu__item">
+            <div class="footer-menu__title">О магазине</div>
+            <ul class="footer-menu__list-inner">
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">О нас</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Наши цены</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Наши скидки</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Акции</a></li>
+            </ul>
           </li>
-          <li class="footer__menu-item">
-            <div class="footer__menu-title">Каталог<a class="footer__menu-link">Смартфоны</a><a class="footer__menu-link">Планшеты</a><a class="footer__menu-link">Компьютеры</a><a class="footer__menu-link">Аксессуары</a>
-            </div>
+          <li class="footer-menu__item">
+            <div class="footer-menu__title">Каталог</div>
+            <ul class="footer-menu__list-inner">
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Смартфоны</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Планшеты</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Компьютеры</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Аксессуары</a></li>
+            </ul>
           </li>
-          <li class="footer__menu-item">
-            <div class="footer__menu-title">Контакты<a class="footer__menu-link">Телефоны</a><a class="footer__menu-link">Адреса</a><a class="footer__menu-link">Карта проезда</a><a class="footer__menu-link">Обратная связь</a>
-            </div>
+          <li class="footer-menu__item">
+            <div class="footer-menu__title">Контакты</div>
+            <ul class="footer-menu__list-inner">
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Телефоны</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Адреса</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Карта проезда</a></li>
+              <li class="footer-menu__item-inner"><a class="footer-menu__link">Обратная связь</a></li>
+            </ul>
           </li>
         </ul>
-        <ul class="footer__app">
-          <li class="header__socials-item"><a href="#" class="footer__app-link footer__app-link--as">App Store</a></li>
-          <li class="header__socials-item"><a href="#" class="footer__app-link footer__app-link--gp">Google Play</a></li>
-        </ul>
-        <ul class="footer__socials">
-          <li class="header__socials-item"><a href="#" class="footer__socials-link footer__socials-link--vk">vkontakte</a></li>
-          <li class="header__socials-item"><a href="#" class="footer__socials-link footer__socials-link--fb">facebook</a></li>
-          <li class="header__socials-item"><a href="#" class="footer__socials-link footer__socials-link--tw">twitter</a></li>
-        </ul>
+        <div class="footer-socials">
+          <ul class="footer-socials__app">
+            <li class="footer-socials__app-item"><a href="#" class="footer-socials__app-link footer-socials__app-link--as">App Store</a></li>
+            <li class="footer-socials__app-item"><a href="#" class="footer-socials__app-link footer-socials__app-link--gp">Google Play</a></li>
+          </ul>
+          <ul class="footer-socials__contacts">
+            <li class="footer-socials__contacts-item"><a href="#" class="footer-socials__contacts-link footer-socials__contacts-link--vk">vkontakte</a></li>
+            <li class="footer-socials__contacts-item"><a href="#" class="footer-socials__contacts-link footer-socials__contacts-link--fb">facebook</a></li>
+            <li class="footer-socials__contacts-item"><a href="#" class="footer-socials__contacts-link footer-socials__contacts-link--tw">twitter</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
     <!-- build:js js/vendor.min.js-->

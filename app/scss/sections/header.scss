@@ -1,5 +1,132 @@
-﻿.header {
+﻿* { box-sizing: border-box }
+.header {
 	&__top {
 		background:$header-top-bg;
+		position: relative;
+		.container {
+		min-height: 41px;
 	}
+	}
+	&__bottom {
+		background:$header-bottom-bg;
+		.container {
+		min-height: 98px;
+			}
+	}
+}
+.header {
+	&__socials {
+		position: absolute;
+		left:0;
+		top:-8px;
+			&-item {
+				@include inlineblock();
+			}
+	}
+	&__address {
+		position: absolute;
+		left: 37%;
+		top: 25%;
+		padding-left: 26px;
+		font-family: "Elektra";
+		font-size: 13px;
+		color: white;
+		text-align: center;
+		line-height: 22px;
+		text-decoration: none;
+		background: url(../img/maps.png) 0 0 no-repeat;
+	}
+	&__phone {
+		position: absolute;
+		right:0;
+		top:8px;
+		text-decoration: none;
+		&-code {
+			font-family: "Elektra-bold";
+			color: $main-blue;
+			font-size: 16px;
+		}
+		&-number {
+			font-size: 25px;
+			line-height: 27px;
+			color:white;
+			font-family: "Elektra";
+			margin-left: 7px;
+		}
+	}
+}
+.header__socials-link {
+	width:26px;
+	height: 26px;
+	background:url(../img/sprite.png);
+	list-style: none;
+	display: block;
+	text-indent: -9999px;
+		&--vk {
+		background-position: -5px -89px;
+		}
+		&--fb{
+		background-position: -36px -89px;
+		}
+		&--tw{
+		background-position: -67px -89px;
+		}
+}
+.header__logo {
+	display: block;
+	&-img {
+			position: absolute;
+			top:24px;
+	}
+	&-text {
+		position: absolute;
+		top:0;
+		left:-9999px;
+	}
+}
+.header__search {
+	position: absolute;
+	left:261px;
+	top:34px;
+	@include clearfix();
+			&-input {
+				box-sizing: border-box;
+			padding:10px;
+			font-size: 15px;
+			line-height: 17px;
+			font-family: "Elektra";
+			color:$placeholder;
+			width: 260px;
+			@include placecolor($color: $placeholder);
+			border: 1px solid $border-input;
+			border-right: 0;
+			float:left;
+			outline: none;
+			}
+			&-button {
+			float: right;
+			height: 35px;
+			width: 80px;
+			color:white;
+			font-family: "Elektra-bold";
+			background: $main-blue;
+			border: 0 none;
+			padding:0;
+			margin:0;
+			}
+}
+.header__nav {
+	position: absolute;
+	right:0;
+	top:27px;
+		&-item {
+			@include inlineblock();
+		}
+}
+.header__basket-list {
+	position: absolute;
+	right:0;
+	width:245px;
+	border: 1px solid $border-input;
+	list-style:none;
 }

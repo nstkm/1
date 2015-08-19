@@ -3,29 +3,36 @@
 		a(href='#').footer__logo
 				img(src='../img/logo-footer.png',alt='logo').footer__logo-img
 				span.footer__logo-text ЭпплShop
-		ul.footer__menu-list
-			li.footer__menu-item
-				.footer__menu-title О магазине
+		ul.footer-menu__list
+			li.footer-menu__item
+				.footer-menu__title О магазине
+				ul.footer-menu__list-inner
 					each items in ["О нас", "Наши цены", "Наши скидки", "Акции"]
-						a.footer__menu-link= items
-			li.footer__menu-item
-				.footer__menu-title Каталог
+						li.footer-menu__item-inner
+							a.footer-menu__link= items
+			li.footer-menu__item
+				.footer-menu__title Каталог
+				ul.footer-menu__list-inner
 					each items in ['Смартфоны', "Планшеты", "Компьютеры", "Аксессуары"]
-						a.footer__menu-link= items
-			li.footer__menu-item
-				.footer__menu-title Контакты
+						li.footer-menu__item-inner
+							a.footer-menu__link= items
+			li.footer-menu__item
+				.footer-menu__title Контакты
+				ul.footer-menu__list-inner
 					each items in ['Телефоны', "Адреса", "Карта проезда", "Обратная связь"]
-						a.footer__menu-link= items
-		ul.footer__app
-				- var items = {'as' : 'App Store', 'gp' : 'Google Play'};
-				each value, key in items
-					li.header__socials-item
-						a(href="#" class="footer__app-link footer__app-link--" + key)= value
-		ul.footer__socials
-				- var items = {'vk' : 'vkontakte', 'fb' : 'facebook', 'tw' : 'twitter'};
-				each value, key in items
-					li.header__socials-item
-						a(href="#" class="footer__socials-link footer__socials-link--" + key)= value
+						li.footer-menu__item-inner
+							a.footer-menu__link= items
+		.footer-socials
+			ul.footer-socials__app
+					- var items = {'as' : 'App Store', 'gp' : 'Google Play'};
+					each value, key in items
+						li.footer-socials__app-item
+							a(href="#" class="footer-socials__app-link footer-socials__app-link--" + key)= value
+			ul.footer-socials__contacts
+					- var items = {'vk' : 'vkontakte', 'fb' : 'facebook', 'tw' : 'twitter'};
+					each value, key in items
+						li.footer-socials__contacts-item
+							a(href="#" class="footer-socials__contacts-link footer-socials__contacts-link--" + key)= value
 
 
 

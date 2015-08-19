@@ -450,33 +450,260 @@ table {
 /* --------- mixins --------- */
 /* --------- variables --------- */
 /* COLORS */
+/* --------- fonts --------- */
+/* FONTS */
+@font-face {
+  font-family: "Elektra";
+  src: url("../fonts/Elektra Light Pro.otf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Elektra-bold";
+  src: url("../fonts/Elektra Light Pro Bold.otf");
+  font-weight: 600;
+  font-style: normal; }
+
 /* --------- sections --------- */
+* {
+  box-sizing: border-box; }
+
 .header__top {
-  background: #41606d; }
+  background: #41606d;
+  position: relative; }
+  .header__top .container {
+    min-height: 41px; }
+
+.header__bottom {
+  background: #e7eef5; }
+  .header__bottom .container {
+    min-height: 98px; }
+
+.header__socials {
+  position: absolute;
+  left: 0;
+  top: -8px; }
+  .header__socials-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.header__address {
+  position: absolute;
+  left: 37%;
+  top: 25%;
+  padding-left: 26px;
+  font-family: "Elektra";
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  line-height: 22px;
+  text-decoration: none;
+  background: url(../img/maps.png) 0 0 no-repeat; }
+
+.header__phone {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  text-decoration: none; }
+  .header__phone-code {
+    font-family: "Elektra-bold";
+    color: #00b9fe;
+    font-size: 16px; }
+  .header__phone-number {
+    font-size: 25px;
+    line-height: 27px;
+    color: white;
+    font-family: "Elektra";
+    margin-left: 7px; }
+
+.header__socials-link {
+  width: 26px;
+  height: 26px;
+  background: url(../img/sprite.png);
+  list-style: none;
+  display: block;
+  text-indent: -9999px; }
+  .header__socials-link--vk {
+    background-position: -5px -89px; }
+  .header__socials-link--fb {
+    background-position: -36px -89px; }
+  .header__socials-link--tw {
+    background-position: -67px -89px; }
+
+.header__logo {
+  display: block; }
+  .header__logo-img {
+    position: absolute;
+    top: 24px; }
+  .header__logo-text {
+    position: absolute;
+    top: 0;
+    left: -9999px; }
+
+.header__search {
+  position: absolute;
+  left: 261px;
+  top: 34px; }
+  .header__search:before,
+  .header__search:after {
+    content: "";
+    display: table; }
+  .header__search:after {
+    clear: both; }
+  .header__search-input {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;
+    line-height: 17px;
+    font-family: "Elektra";
+    color: #dee8f1;
+    width: 260px;
+    border: 1px solid #dce6f0;
+    border-right: 0;
+    float: left;
+    outline: none; }
+    .header__search-input::-webkit-input-placeholder {
+      color: #dee8f1; }
+    .header__search-input:-moz-placeholder {
+      color: #dee8f1; }
+    .header__search-input::-moz-placeholder {
+      color: #dee8f1; }
+    .header__search-input:-ms-input-placeholder {
+      color: #dee8f1; }
+  .header__search-button {
+    float: right;
+    height: 35px;
+    width: 80px;
+    color: white;
+    font-family: "Elektra-bold";
+    background: #00b9fe;
+    border: 0 none;
+    padding: 0;
+    margin: 0; }
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  top: 27px; }
+  .header__nav-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.header__basket-list {
+  position: absolute;
+  right: 0;
+  width: 245px;
+  border: 1px solid #dce6f0;
+  list-style: none; }
 
 .footer {
   background: #613993 url(../img/footer-bg.png) repeat;
   height: 228px;
   margin-top: -228px;
   color: white; }
+  .footer .container {
+    padding-top: 60px;
+    position: relative;
+    min-height: 228px-60px; }
 
-.wrapper {
-  position: relative;
-  min-height: 100%;
-  min-width: 1010px;
-  height: auto !important;
-  overflow: hidden; }
-  .wrapper:after {
-    content: "";
-    height: 228px;
-    display: block; }
-
-.footer__socials {
+.footer__logo {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
+  left: 0;
+  top: 100px; }
+  .footer__logo-text {
+    left: -9999px;
+    position: absolute;
+    top: 0; }
+
+.footer__app {
+  margin-left: 120px;
+  position: absolute;
+  right: 0;
+  top: 72px; }
+  .footer__app-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.footer-menu__list {
+  margin-left: 261px;
+  padding: 0;
+  font-size: 15px; }
+  .footer-menu__list-inner {
+    margin: 0;
+    padding: 0; }
+
+.footer-menu__item {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  margin-left: 72px;
+  margin: 0;
+  padding: 0; }
+  .footer-menu__item-inner {
+    list-style: none; }
+  .footer-menu__item:first-child {
+    margin-left: 0px; }
+
+.footer-menu__link {
+  line-height: 17px; }
+
+.footer-socials__app {
+  padding: 0;
+  margin-bottom: 30px; }
+  .footer-socials__app-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.footer-socials__contacts {
+  padding: 0;
+  margin: 0; }
+  .footer-socials__contacts:before,
+  .footer-socials__contacts:after {
+    content: "";
+    display: table; }
+  .footer-socials__contacts:after {
+    clear: both; }
+  .footer-socials__contacts-item {
+    display: inline-block;
+    vertical-align: top; }
+
+.footer-socials {
+  right: 0;
+  top: 65px;
+  position: absolute; }
+
+.footer-socials__app-link {
+  display: block;
+  text-indent: -9999px; }
+  .footer-socials__app-link--as {
+    width: 90px;
+    height: 32px;
+    background: url(../img/app-store.png); }
+  .footer-socials__app-link--gp {
+    width: 90px;
+    height: 32px;
+    background: url(../img/google-store.png); }
+
+.footer-socials__contacts-link {
+  display: block;
+  text-indent: -9999px; }
+  .footer-socials__contacts-link--vk {
+    background: url(../img/sprite.png);
+    width: 42px;
+    height: 44px;
+    background-position: -135px -5px; }
+  .footer-socials__contacts-link--fb {
+    background: url(../img/sprite.png);
+    width: 42px;
+    height: 44px;
+    background-position: -188px -5px; }
+  .footer-socials__contacts-link--tw {
+    background: url(../img/sprite.png);
+    width: 42px;
+    height: 44px;
+    background-position: -240px -5px; }
+
+* {
+  box-sizing: border-box; }
 
 .container {
   margin: 0 auto;
@@ -490,7 +717,22 @@ table {
     clear: both; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  widows: 100%; }
 
 body {
   height: 100%; }
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  min-width: 1010px;
+  height: auto !important;
+  overflow: hidden; }
+  .wrapper:after {
+    content: "";
+    height: 228px;
+    display: block; }
+
+ul {
+  padding: 0; }
