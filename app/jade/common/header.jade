@@ -28,24 +28,13 @@ header.header
 					li.header__nav-item.header__nav-item--basket
 						a.header__nav-link--basket(href='#') Корзина(3)
 						ul.header__basket-list
+							each product, index in ['iPhone 6', 'iPad Air Wi-Fi + Cellular 128GB - silver', 'Mackbook Air']
 								li.header__basket-item
 									a.header__basket-link(href="#")
 										.header__basker-img--wrap
-											img.header__basket-img(src='../img/basket-1.png', alt='basket-img')
-											.basket__text-wrap
-												.basket__text iPhone 6
-								li.header__basket-item
-									a.header__basket-link(href="#")
-										.header__basker-img--wrap
-											img.header__basket-img(src='../img/basket-2.png', alt='basket-img')
-											.basket__text-wrap
-												.basket__text iPad Air Wi-Fi + Cellular 128GB - Silver
-								li.header__basket-item
-									a.header__basket-link(href="#")
-										.header__basker-img--wrap
-											img.header__basket-img(src='../img/basket-3.png', alt='basket-img')
+											img.header__basket-img(src='../img/basket-' + index + ".png" , alt='basket-img')
 										.basket__text-wrap
-											.basket__text Macbook Air
+											.basket__text= product
 
 
 
