@@ -638,6 +638,7 @@ table {
 
 /* выплывашечка */
 .header__basket-list {
+  display: none;
   background: white;
   z-index: 3;
   position: absolute;
@@ -1047,6 +1048,13 @@ ul {
   float: right;
   width: 443px;
   margin-right: 230px; }
+  .product-desc__title {
+    font-family: "Elektra-bold";
+    font-size: 25px;
+    color: #00b9fe;
+    margin-bottom: 27px; }
 
 .product-desc__table {
   width: 100%; }
+  .product-desc__table tr.grey {
+    background-color: #eef2f4; }

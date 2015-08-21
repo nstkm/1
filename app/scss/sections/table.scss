@@ -2,7 +2,18 @@
 	float: right;
 	width: 443px;
 	margin-right: 230px;
+		&__title {
+			font-family: "Elektra-bold";
+			font-size: 25px;
+			color: $main-blue;
+			margin-bottom: 27px;
+		}
+
 }
 .product-desc__table {
 	width: 100%;
+	tr.grey {
+		background-color: $table-grey;
+			}
+
 }
