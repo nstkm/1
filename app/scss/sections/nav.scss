@@ -17,10 +17,10 @@
 				z-index: 1;
 				position: absolute;
 				top: 50%;
-				margin-top: -1.5em;
-				border-top: 1.5em solid transparent;
-				border-bottom: 1.5em solid transparent;
-				border-left: 1em solid;
+				margin-top: -22px;
+				border-top: 22px solid transparent;
+				border-bottom: 24px solid transparent;
+				border-left: 15px solid;
 				left: 0;
 				border-left-color: $nav-grey;
 				}
@@ -42,6 +42,8 @@
 			position: relative;
 			text-shadow: 0 1px 0 rgba(255,255,255,.5);
 			background-color: #f7f7f7;
+			@include transition(all, .3s);
+
 		&:hover {
 		background: #dce6f0;
 	}
@@ -65,7 +67,7 @@
 
 	&:before {
 		border-left-color: $nav-hover;
-		right: -1.1em;
+		right: -16px;
 		z-index: 1;
 	}
 

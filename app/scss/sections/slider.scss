@@ -5,5 +5,47 @@
 		&__img {
 			float: left;
 			width:305px;
+			position: relative;
+			overflow: hidden;
 		}
+}
+.product__slidershow-photo {
+	position: relative;
+	height: 250px;
+	width:305px;
+	margin-bottom: 10px;
+	.product__slidershow-img {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			margin: auto;
+
+	}
+
+}
+.product__slider-list {
+	width: 245px;
+	overflow: hidden;
+	height: 80px;
+	margin: 0 auto;
+}
+.product__slider-item {
+	display: inline-block;
+	width: 75px;
+}
+.product__slider-link {
+	display: block;
+	position: relative;
+	width: 75px;
+	height: 75px;
+	.product__slider-img {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		margin: auto;
+	}
 }

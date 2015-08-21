@@ -493,7 +493,7 @@ table {
 
 .header__address {
   position: absolute;
-  left: 37%;
+  left: 38%;
   top: 25%;
   padding-left: 26px;
   font-family: "Elektra";
@@ -659,18 +659,7 @@ table {
   color: #613993; }
 
 .header__basket-img {
-  text-align: center;
-  /*
-		display: block;
-		max-width: 60px;
-		max-height: 50px;
-		position: absolute;
-		top:0;
-		left:0;
-		right:0;
-		bottom:0;
-		margin: auto;
-*/ }
+  text-align: center; }
   .header__basket-img--wrap {
     top: 13px;
     left: 9px;
@@ -703,7 +692,6 @@ table {
 
 .footer {
   background: #613993 url(../img/footer-bg.png) repeat;
-  height: 228px;
   margin-top: -228px;
   color: white; }
   .footer .container {
@@ -899,10 +887,10 @@ ul {
       z-index: 1;
       position: absolute;
       top: 50%;
-      margin-top: -1.5em;
-      border-top: 1.5em solid transparent;
-      border-bottom: 1.5em solid transparent;
-      border-left: 1em solid;
+      margin-top: -22px;
+      border-top: 22px solid transparent;
+      border-bottom: 24px solid transparent;
+      border-left: 15px solid;
       left: 0;
       border-left-color: #f7f7f7; }
   .navigation__item {
@@ -918,7 +906,12 @@ ul {
     color: #5c7b98;
     position: relative;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    background-color: #f7f7f7; }
+    background-color: #f7f7f7;
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s; }
     .navigation__link:hover {
       background: #dce6f0; }
     .navigation__link:after, .navigation__link:before {
@@ -940,7 +933,7 @@ ul {
       transition: all, 0.3s; }
     .navigation__link:before {
       border-left-color: #dce6f0;
-      right: -1.1em;
+      right: -16px;
       z-index: 1; }
     .navigation__link:hover:after {
       border-left-color: #dce6f0; }
@@ -950,6 +943,56 @@ ul {
   color: white; }
   .navigation__link--active:after, .navigation__link--active:hover:after {
     border-left-color: #00b9fe; }
+
+.product .container:before,
+.product .container:after {
+  content: "";
+  display: table; }
+
+.product .container:after {
+  clear: both; }
+
+.product__img {
+  float: left;
+  width: 305px;
+  position: relative;
+  overflow: hidden; }
+
+.product__slidershow-photo {
+  position: relative;
+  height: 250px;
+  width: 305px;
+  margin-bottom: 10px; }
+  .product__slidershow-photo .product__slidershow-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
+
+.product__slider-list {
+  width: 245px;
+  overflow: hidden;
+  height: 80px;
+  margin: 0 auto; }
+
+.product__slider-item {
+  display: inline-block;
+  width: 75px; }
+
+.product__slider-link {
+  display: block;
+  position: relative;
+  width: 75px;
+  height: 75px; }
+  .product__slider-link .product__slider-img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto; }
 
 .breadcrumbs {
   margin-bottom: 22px; }
@@ -980,3 +1023,11 @@ ul {
     .breadcrumbs__link--active {
       text-decoration: none;
       color: #5c7b98; }
+
+.product-desc {
+  float: right;
+  width: 443px;
+  margin-right: 230px; }
+
+.product-desc__table {
+  width: 100%; }
