@@ -1,4 +1,4 @@
-section.product
+﻿section.product
 	.container
 		section.product__img
 			.product__slidershow
@@ -6,16 +6,8 @@ section.product
 					img.product__slidershow-img(src='../img/iphone-1.png' ,alt='slide')
 				.product__slidershow-slider
 					ul.product__slider-list
-						li.product__slider-item
-							a.product__slider-link(href="#")
-								img.product__slider-img(src='../img/iphone-2.png' ,alt='slide')
-						li.product__slider-item
-							a.product__slider-link(href="#")
-								img.product__slider-img(src='../img/iphone-3.png' ,alt='slide')
-						li.product__slider-item
-							a.product__slider-link(href="#")
-								img.product__slider-img(src='../img/iphone-4.png' ,alt='slide')
-						li.product__slider-item
-							a.product__slider-link(href="#")
-								img.product__slider-img(src='../img/iphone-1.png' ,alt='slide')
+						- for (var i = 0; i < 5; i++)
+								li.product__slider-item
+									a(href="#").product__slider-link
+										img(src="../img/iphone-" + i + ".png" , alt="slide")
 

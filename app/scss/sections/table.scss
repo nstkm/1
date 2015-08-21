@@ -1,6 +1,7 @@
 ﻿.product-desc {
+	margin-bottom: 60px;
 	float: right;
-	width: 443px;
+	width: 448px;
 	margin-right: 230px;
 		&__title {
 			font-family: "Elektra-bold";
@@ -12,6 +13,13 @@
 }
 .product-desc__table {
 	width: 100%;
+	color: $main-text;
+	font-size: 14px;
+	font-family: "Elektra";
+	td {
+		padding: 7px 10px;
+		width: 188px;
+	}
 	tr.grey {
 		background-color: $table-grey;
 			}

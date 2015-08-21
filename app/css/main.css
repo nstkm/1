@@ -1045,8 +1045,9 @@ ul {
       color: #5c7b98; }
 
 .product-desc {
+  margin-bottom: 60px;
   float: right;
-  width: 443px;
+  width: 445px;
   margin-right: 230px; }
   .product-desc__title {
     font-family: "Elektra-bold";
@@ -1055,6 +1056,12 @@ ul {
     margin-bottom: 27px; }
 
 .product-desc__table {
-  width: 100%; }
+  width: 100%;
+  color: #5c7b98;
+  font-size: 14px;
+  font-family: "Elektra"; }
+  .product-desc__table td {
+    padding: 7px 10px;
+    width: 188px; }
   .product-desc__table tr.grey {
     background-color: #eef2f4; }
