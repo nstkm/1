@@ -146,6 +146,7 @@
 			padding:12px;
 			&:hover {
 				color:$header-menu-hover;
+
 			}
 		}
 }
@@ -172,8 +173,10 @@
 			&:hover {
 			}
  }
+
+/* выплывашечка */
 .header__basket-list {
-		display: none;
+
 	background:white;
 	z-index: 3;
 	position: absolute;
@@ -185,27 +188,28 @@
 }
 .header__basket-item {
 		@include clearfix();
-		&:hover {
-			background:$basket-hover;
-			color:$basket-color-hover;
+		@include transition(all, .3s , linear);
+		&.grey {
+			color: $basket-hover ;
 		}
-
 }
 
 .header__basket-img {
-	text-align: center;
+
 		&--wrap {
+			text-align: center;
 			top: 13px;
 			left: 9px;
 			position: absolute;
 			overflow: hidden;
-			//float: left;
+			float: left;
 			height: 50px;
 			width:60px;
 		}
 }
 .header__basket-link {
 	display: block;
+	position: relative;
 	@include clearfix();
 }
 .basket__text {
@@ -214,12 +218,17 @@
 		font-family: "Elektra";
 		color: $main-blue;
 		text-decoration: underline;
+		width: 150px;
+		height: 60px;
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 13px;
+		line-height: 15px;
 		&:hover {
 			color:$basket-color-hover;
 		}
 		&-wrap {
 			float:right;
 			width:160px;
-			margin: 25px 0;
 		}
 }
