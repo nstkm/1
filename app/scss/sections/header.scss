@@ -170,13 +170,11 @@
 			top:12px;
 			left:11px;
 			}
-			&:hover {
-			}
  }
 
 /* выплывашечка */
 .header__basket-list {
-
+	//display: none;
 	background:white;
 	z-index: 3;
 	position: absolute;
@@ -186,25 +184,33 @@
 	border: 1px solid $border-input;
 	list-style:none;
 }
+.header__nav-list > li:hover .header__basket-list {
+	display: block;
+}
 .header__basket-item {
 		@include clearfix();
 		@include transition(all, .3s , linear);
+
 		&.grey {
-			color: $basket-hover ;
+			background-color: $basket-hover ;
 		}
 }
 
 .header__basket-img {
-
+		display: block;
+		max-width: 60px;
+		max-height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
 		&--wrap {
-			text-align: center;
-			top: 13px;
-			left: 9px;
-			position: absolute;
-			overflow: hidden;
-			float: left;
-			height: 50px;
-			width:60px;
+				float: left;
+				position: relative;
+				width: 75px;
+				height: 60px;
 		}
 }
 .header__basket-link {

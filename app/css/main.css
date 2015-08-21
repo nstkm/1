@@ -647,6 +647,9 @@ table {
   border: 1px solid #dce6f0;
   list-style: none; }
 
+.header__nav-list > li:hover .header__basket-list {
+  display: block; }
+
 .header__basket-item {
   -webkit-transition: all, 0.3s, linear;
   -moz-transition: all, 0.3s, linear;
@@ -659,16 +662,24 @@ table {
     display: table; }
   .header__basket-item:after {
     clear: both; }
+  .header__basket-item.grey {
+    background-color: #f8fafb; }
 
-.header__basket-img--wrap {
-  text-align: center;
-  top: 13px;
-  left: 9px;
+.header__basket-img {
+  display: block;
+  max-width: 60px;
+  max-height: 50px;
   position: absolute;
-  overflow: hidden;
-  float: left;
-  height: 50px;
-  width: 60px; }
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+  .header__basket-img--wrap {
+    float: left;
+    position: relative;
+    width: 75px;
+    height: 60px; }
 
 .header__basket-link {
   display: block;
