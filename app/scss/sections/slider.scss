@@ -1,12 +1,12 @@
 ﻿.product {
+		float: left;
+		margin-bottom: 60px;
 		.container {
 			@include clearfix();
 		}
 		&__img {
 			float: left;
 			width:305px;
-			position: relative;
-			overflow: hidden;
 		}
 }
 .product__slidershow-photo {
@@ -21,9 +21,11 @@
 			left: 0;
 			bottom: 0;
 			margin: auto;
-
 	}
-
+.product__slidershow-slider {
+	@include clearfix();
+	position: relative;
+}
 }
 .product__slider-list {
 	width: 245px;
@@ -32,20 +34,23 @@
 	margin: 0 auto;
 }
 .product__slider-item {
-	display: inline-block;
-	width: 75px;
+	float: left;
+	list-style: none;
 }
 .product__slider-link {
 	display: block;
 	position: relative;
 	width: 75px;
 	height: 75px;
-	.product__slider-img {
+	overflow: hidden;
+	img {
+		width: 100%;
 		position: absolute;
 		display: block;
 		top: 0;
 		left: 0;
 		bottom: 0;
+		right: 0;
 		margin: auto;
 	}
 }

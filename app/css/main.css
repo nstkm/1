@@ -964,19 +964,18 @@ ul {
   .navigation__link--active:after, .navigation__link--active:hover:after {
     border-left-color: #00b9fe; }
 
-.product .container:before,
-.product .container:after {
-  content: "";
-  display: table; }
-
-.product .container:after {
-  clear: both; }
-
-.product__img {
+.product {
   float: left;
-  width: 305px;
-  position: relative;
-  overflow: hidden; }
+  margin-bottom: 60px; }
+  .product .container:before,
+  .product .container:after {
+    content: "";
+    display: table; }
+  .product .container:after {
+    clear: both; }
+  .product__img {
+    float: left;
+    width: 305px; }
 
 .product__slidershow-photo {
   position: relative;
@@ -990,6 +989,14 @@ ul {
     left: 0;
     bottom: 0;
     margin: auto; }
+  .product__slidershow-photo .product__slidershow-slider {
+    position: relative; }
+    .product__slidershow-photo .product__slidershow-slider:before,
+    .product__slidershow-photo .product__slidershow-slider:after {
+      content: "";
+      display: table; }
+    .product__slidershow-photo .product__slidershow-slider:after {
+      clear: both; }
 
 .product__slider-list {
   width: 245px;
@@ -998,20 +1005,23 @@ ul {
   margin: 0 auto; }
 
 .product__slider-item {
-  display: inline-block;
-  width: 75px; }
+  float: left;
+  list-style: none; }
 
 .product__slider-link {
   display: block;
   position: relative;
   width: 75px;
-  height: 75px; }
-  .product__slider-link .product__slider-img {
+  height: 75px;
+  overflow: hidden; }
+  .product__slider-link img {
+    width: 100%;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     bottom: 0;
+    right: 0;
     margin: auto; }
 
 .breadcrumbs {
@@ -1047,7 +1057,7 @@ ul {
 .product-desc {
   margin-bottom: 60px;
   float: right;
-  width: 445px;
+  width: 448px;
   margin-right: 230px; }
   .product-desc__title {
     font-family: "Elektra-bold";
