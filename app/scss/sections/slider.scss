@@ -1,12 +1,13 @@
 ﻿.product {
+		margin-bottom: 60px;
 		.container {
 			@include clearfix();
 		}
 		&__img {
 			float: left;
 			width:305px;
-			position: relative;
-			overflow: hidden;
+			//position: relative;
+			//overflow: hidden;
 		}
 }
 .product__slidershow-photo {

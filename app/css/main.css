@@ -865,30 +865,6 @@ body {
 ul {
   padding: 0; }
 
-/* section-about */
-.product-about {
-  margin-bottom: 52px; }
-  .product-about__title {
-    color: #5c7b98;
-    font-size: 25px;
-    font-family: "Elektra-bold";
-    margin-bottom: 6px; }
-  .product-about__text {
-    width: 100%; }
-    .product-about__text p {
-      display: inline-block;
-      vertical-align: top;
-      font-family: "Elektra";
-      margin: 0;
-      padding: 0;
-      width: 33%;
-      overflow: hidden;
-      padding-right: 36px;
-      color: #5c7b98;
-      font-size: 15px; }
-      .product-about__text p:first-child {
-        margin: 0; }
-
 .navigation {
   background: #f7f7f7;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -964,19 +940,17 @@ ul {
   .navigation__link--active:after, .navigation__link--active:hover:after {
     border-left-color: #00b9fe; }
 
-.product .container:before,
-.product .container:after {
-  content: "";
-  display: table; }
-
-.product .container:after {
-  clear: both; }
-
-.product__img {
-  float: left;
-  width: 305px;
-  position: relative;
-  overflow: hidden; }
+.product {
+  margin-bottom: 60px; }
+  .product .container:before,
+  .product .container:after {
+    content: "";
+    display: table; }
+  .product .container:after {
+    clear: both; }
+  .product__img {
+    float: left;
+    width: 305px; }
 
 .product__slidershow-photo {
   position: relative;
@@ -1056,5 +1030,33 @@ ul {
 
 .product-desc__table {
   width: 100%; }
+  .product-desc__table td {
+    color: #5c7b98;
+    font-size: 14px;
+    padding: 7px 10px; }
   .product-desc__table tr.grey {
     background-color: #eef2f4; }
+
+/* section-about */
+.product-about {
+  margin-bottom: 52px; }
+  .product-about__title {
+    color: #5c7b98;
+    font-size: 25px;
+    font-family: "Elektra-bold";
+    margin-bottom: 6px; }
+  .product-about__text {
+    width: 100%; }
+    .product-about__text p {
+      display: inline-block;
+      vertical-align: top;
+      font-family: "Elektra";
+      margin: 0;
+      padding: 0;
+      width: 33%;
+      overflow: hidden;
+      padding-right: 36px;
+      color: #5c7b98;
+      font-size: 15px; }
+      .product-about__text p:first-child {
+        margin: 0; }

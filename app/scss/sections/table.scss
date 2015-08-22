@@ -12,8 +12,12 @@
 }
 .product-desc__table {
 	width: 100%;
+		td {
+		color: $main-text;
+		font-size: 14px;
+		padding: 7px 10px;
+	}
 	tr.grey {
 		background-color: $table-grey;
 			}
-
 }

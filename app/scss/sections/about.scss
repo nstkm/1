@@ -1,0 +1,27 @@
+﻿/* section-about */
+.product-about {
+	margin-bottom: 52px;
+		&__title {
+			color: $main-text;
+			font-size: 25px;
+			font-family: "Elektra-bold";
+			margin-bottom: 6px;
+		}
+		&__text {
+			width: 100%;
+			p {
+				@include inlineblock();
+				font-family: "Elektra";
+				margin: 0;
+				padding: 0;
+				width: 33%;
+				overflow: hidden;
+				padding-right: 36px;
+				color: $main-text;
+				font-size: 15px;
+				&:first-child {
+					margin:0;
+						}
+			}
+		}
+}
