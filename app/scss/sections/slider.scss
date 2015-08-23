@@ -1,5 +1,5 @@
 ﻿.product {
-		margin-bottom: 60px;
+		margin-bottom: 50px;
 		.container {
 			@include clearfix();
 		}
@@ -33,6 +33,7 @@
 
 	.bx-prev, .bx-next {
 		text-decoration: none;
+		font-family: "Elektra";
 		display: block;
 		position: absolute;
 		top: 50%;
@@ -56,29 +57,29 @@
 	}
 
 	.bx-prev {
-		background-position: 0 0;
 		left: 8px;
 		padding-right: 6px;
 		text-align: right;
 		&:after {
 		border-right: 8px solid #d0e4f3;
 		left: -8px;
-		&:hover {
-			background: $main-blue;
-		}
-		}
-
+	}
+			&:hover {
+				border-right: 8px solid #00b9fe;
+			}
 	}
 
 	.bx-next {
-		background-position: right 0;
-		right: 0;
+		right: 8px;
 		padding-left: 6px;
 		&:after {
 		border-left: 8px solid #d0e4f3;
 		right: -8px;
 		}
 	}
+}
+.product__slideshow-slider .bx-next:after:hover  {
+	border-left: 8px solid #00b9fe;
 }
 .product__slider-item {
 	float: left;
@@ -89,6 +90,7 @@
 	width: 75px;
 	height: 75px;
 	img {
+		height: 100%;
 		width: 100%;
 		position: absolute;
 		display: block;

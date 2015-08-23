@@ -941,7 +941,7 @@ ul {
     border-left-color: #00b9fe; }
 
 .product {
-  margin-bottom: 60px; }
+  margin-bottom: 50px; }
   .product .container:before,
   .product .container:after {
     content: "";
@@ -978,6 +978,7 @@ ul {
     clear: both; }
   .product__slideshow-slider .bx-prev, .product__slideshow-slider .bx-next {
     text-decoration: none;
+    font-family: "Elektra";
     display: block;
     position: absolute;
     top: 50%;
@@ -1001,22 +1002,23 @@ ul {
     .product__slideshow-slider .bx-prev:hover, .product__slideshow-slider .bx-next:hover {
       background: #00b9fe; }
   .product__slideshow-slider .bx-prev {
-    background-position: 0 0;
     left: 8px;
     padding-right: 6px;
     text-align: right; }
     .product__slideshow-slider .bx-prev:after {
       border-right: 8px solid #d0e4f3;
       left: -8px; }
-      .product__slideshow-slider .bx-prev:after:hover {
-        background: #00b9fe; }
+    .product__slideshow-slider .bx-prev:hover {
+      border-right: 8px solid #00b9fe; }
   .product__slideshow-slider .bx-next {
-    background-position: right 0;
-    right: 0;
+    right: 8px;
     padding-left: 6px; }
     .product__slideshow-slider .bx-next:after {
       border-left: 8px solid #d0e4f3;
       right: -8px; }
+
+.product__slideshow-slider .bx-next:after:hover {
+  border-left: 8px solid #00b9fe; }
 
 .product__slider-item {
   float: left; }
@@ -1027,6 +1029,7 @@ ul {
   width: 75px;
   height: 75px; }
   .product__slider-link img {
+    height: 100%;
     width: 100%;
     position: absolute;
     display: block;
