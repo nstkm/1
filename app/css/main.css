@@ -964,6 +964,14 @@ ul {
     left: 0;
     bottom: 0;
     margin: auto; }
+  .product__slidershow-photo .product__slidershow-slider {
+    position: relative; }
+    .product__slidershow-photo .product__slidershow-slider:before,
+    .product__slidershow-photo .product__slidershow-slider:after {
+      content: "";
+      display: table; }
+    .product__slidershow-photo .product__slidershow-slider:after {
+      clear: both; }
 
 .product__slider-list {
   width: 245px;
@@ -972,20 +980,23 @@ ul {
   margin: 0 auto; }
 
 .product__slider-item {
-  display: inline-block;
-  width: 75px; }
+  float: left;
+  list-style: none; }
 
 .product__slider-link {
   display: block;
   position: relative;
   width: 75px;
-  height: 75px; }
-  .product__slider-link .product__slider-img {
+  height: 75px;
+  overflow: hidden; }
+  .product__slider-link img {
+    width: 100%;
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     bottom: 0;
+    right: 0;
     margin: auto; }
 
 .breadcrumbs {
@@ -1019,8 +1030,9 @@ ul {
       color: #5c7b98; }
 
 .product-desc {
+  margin-bottom: 60px;
   float: right;
-  width: 443px;
+  width: 448px;
   margin-right: 230px; }
   .product-desc__title {
     font-family: "Elektra-bold";
@@ -1033,7 +1045,8 @@ ul {
   .product-desc__table td {
     color: #5c7b98;
     font-size: 14px;
-    padding: 7px 10px; }
+    padding: 7px 10px;
+    font-family: "Elektra"; }
   .product-desc__table tr.grey {
     background-color: #eef2f4; }
 
