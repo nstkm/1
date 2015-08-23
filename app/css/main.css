@@ -950,12 +950,14 @@ ul {
     clear: both; }
   .product__img {
     float: left;
-    width: 305px; }
+    width: 305px;
+    margin-right: 25px; }
 
 .product__slideshow-photo {
   position: relative;
   height: 250px;
-  width: 305px;
+  max-width: 305px;
+  max-height: 238px;
   margin-bottom: 10px; }
   .product__slideshow-photo img {
     display: block;
@@ -979,19 +981,35 @@ ul {
     display: block;
     position: absolute;
     top: 50%;
+    background-color: #d0e4f3;
     width: 16px;
     height: 34px;
     margin-top: -34px / 2;
     color: #ffffff;
     line-height: 34px; }
+    .product__slideshow-slider .bx-prev:after, .product__slideshow-slider .bx-next:after {
+      content: '';
+      position: absolute;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      top: 0;
+      -webkit-transition: all, 0.3s, ease-in-out;
+      -moz-transition: all, 0.3s, ease-in-out;
+      -ms-transition: all, 0.3s, ease-in-out;
+      -o-transition: all, 0.3s, ease-in-out;
+      transition: all, 0.3s, ease-in-out; }
+    .product__slideshow-slider .bx-prev:hover, .product__slideshow-slider .bx-next:hover {
+      background: #00b9fe; }
   .product__slideshow-slider .bx-prev {
     background-position: 0 0;
-    left: 0;
+    left: 8px;
     padding-right: 6px;
     text-align: right; }
     .product__slideshow-slider .bx-prev:after {
       border-right: 8px solid #d0e4f3;
       left: -8px; }
+      .product__slideshow-slider .bx-prev:after:hover {
+        background: #00b9fe; }
   .product__slideshow-slider .bx-next {
     background-position: right 0;
     right: 0;
@@ -1017,6 +1035,11 @@ ul {
     bottom: 0;
     right: 0;
     margin: auto; }
+
+.bx-wrapper {
+  margin: 0 auto; }
+  .bx-wrapper .bx-viewport {
+    height: 100%; }
 
 .breadcrumbs {
   margin-bottom: 22px; }
@@ -1051,7 +1074,7 @@ ul {
 .product-desc {
   float: right;
   width: 448px;
-  margin-right: 230px; }
+  margin-right: 218px; }
   .product-desc__title {
     font-family: "Elektra-bold";
     font-size: 25px;

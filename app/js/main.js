@@ -17,6 +17,7 @@
 			if ($('.product__slider-list').length) {
 				$('.product__slider-list').bxSlider({
 					slideWidth: 75,
+					slideHeight: 75,
 					minSlides: 3,
 					maxSlides: 3,
 					slideMargin: 10,
@@ -53,10 +54,10 @@
 				$('body, html').animate({scrollTop: 0}, 500);
 			});
 		};
+			return {
+		init : init
+	};
 
-		return {
-		init: init
-		};
-})();
+}());
 
 myModule.init();

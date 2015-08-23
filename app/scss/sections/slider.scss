@@ -6,13 +6,15 @@
 		&__img {
 			float: left;
 			width:305px;
+			margin-right: 25px;
 		}
 }
 
 .product__slideshow-photo {
 	position: relative;
 	height: 250px;
-	width:305px;
+	max-width:305px;
+	max-height: 238px;
 	margin-bottom: 10px;
 		img {
 			display: block;
@@ -34,22 +36,38 @@
 		display: block;
 		position: absolute;
 		top: 50%;
+		background-color: #d0e4f3;
 		width: 22px - 6px; //минус ширина отступа
 		height: 34px;
 		margin-top: -34px / 2;
 		color: #ffffff;
 		line-height: 34px;
+		&:after {
+			content: '' ;
+			position: absolute;
+			border-top: 17px solid transparent;
+			border-bottom: 17px solid transparent;
+			top: 0;
+			@include transition(all, .3s , ease-in-out);
+		}
+		&:hover {
+			background: $main-blue;
+		}
 	}
 
 	.bx-prev {
 		background-position: 0 0;
-		left: 0;
+		left: 8px;
 		padding-right: 6px;
 		text-align: right;
 		&:after {
 		border-right: 8px solid #d0e4f3;
 		left: -8px;
+		&:hover {
+			background: $main-blue;
 		}
+		}
+
 	}
 
 	.bx-next {
@@ -79,5 +97,11 @@
 		bottom: 0;
 		right: 0;
 		margin: auto;
+	}
+}
+.bx-wrapper {
+	margin: 0 auto;
+	.bx-viewport {
+	height: 100%;
 	}
 }

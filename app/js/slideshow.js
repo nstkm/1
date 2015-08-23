@@ -20,4 +20,3 @@
 	});
 }());
 
-slideshowModule.init();
