@@ -1,33 +1,92 @@
 ﻿.product {
-		margin-bottom: 60px;
+		margin-bottom: 50px;
 		.container {
 			@include clearfix();
 		}
 		&__img {
 			float: left;
 			width:305px;
+			margin-right: 25px;
 		}
 }
-.product__slidershow-photo {
+
+.product__slideshow-photo {
 	position: relative;
 	height: 250px;
-	width:305px;
+	max-width:305px;
+	max-height: 238px;
 	margin-bottom: 10px;
-	.product__slidershow-img {
+		img {
 			display: block;
 			position: absolute;
 			top: 0;
 			left: 0;
 			bottom: 0;
+			right: 0;
 			margin: auto;
-	}
-.product__slidershow-slider {
+			}
+}
+
+.product__slideshow-slider {
 	@include clearfix();
 	position: relative;
+<<<<<<< HEAD
 	width: 245px;
 	overflow: hidden;
 	height: 80px;
 	margin: 0 auto;
+=======
+
+	.bx-prev, .bx-next {
+		text-decoration: none;
+		font-family: "Elektra";
+		display: block;
+		position: absolute;
+		top: 50%;
+		background-color: #d0e4f3;
+		width: 22px - 6px; //минус ширина отступа
+		height: 34px;
+		margin-top: -34px / 2;
+		color: #ffffff;
+		line-height: 34px;
+		&:after {
+			content: '' ;
+			position: absolute;
+			border-top: 17px solid transparent;
+			border-bottom: 17px solid transparent;
+			top: 0;
+			@include transition(all, .3s , ease-in-out);
+		}
+		&:hover {
+			background: $main-blue;
+		}
+	}
+
+	.bx-prev {
+		left: 8px;
+		padding-right: 6px;
+		text-align: right;
+		&:after {
+		border-right: 8px solid #d0e4f3;
+		left: -8px;
+	}
+			&:hover {
+				border-right: 8px solid #00b9fe;
+			}
+	}
+
+	.bx-next {
+		right: 8px;
+		padding-left: 6px;
+		&:after {
+		border-left: 8px solid #d0e4f3;
+		right: -8px;
+		}
+	}
+}
+.product__slideshow-slider .bx-next:after:hover  {
+	border-left: 8px solid #00b9fe;
+>>>>>>> javascript
 }
 }
 .product__slider-list {
@@ -35,15 +94,14 @@
 }
 .product__slider-item {
 	float: left;
-	list-style: none;
 }
 .product__slider-link {
 	display: block;
 	position: relative;
 	width: 75px;
 	height: 75px;
-	overflow: hidden;
 	img {
+		height: 100%;
 		width: 100%;
 		position: absolute;
 		display: block;
@@ -52,5 +110,11 @@
 		bottom: 0;
 		right: 0;
 		margin: auto;
+	}
+}
+.bx-wrapper {
+	margin: 0 auto;
+	.bx-viewport {
+	height: 100%;
 	}
 }
