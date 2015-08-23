@@ -952,28 +952,29 @@ ul {
     float: left;
     width: 305px; }
 
-.product__slidershow-photo {
+.product__slideshow-photo {
   position: relative;
   height: 250px;
   width: 305px;
   margin-bottom: 10px; }
-  .product__slidershow-photo .product__slidershow-img {
+  .product__slideshow-photo img {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
+    right: 0;
     margin: auto; }
 
-.product__slidershow-slider {
+.product__slideshow-slider {
   position: relative; }
-  .product__slidershow-slider:before,
-  .product__slidershow-slider:after {
+  .product__slideshow-slider:before,
+  .product__slideshow-slider:after {
     content: "";
     display: table; }
-  .product__slidershow-slider:after {
+  .product__slideshow-slider:after {
     clear: both; }
-  .product__slidershow-slider .bx-prev, .product__slidershow-slider .bx-next {
+  .product__slideshow-slider .bx-prev, .product__slideshow-slider .bx-next {
     text-decoration: none;
     display: block;
     position: absolute;
@@ -983,19 +984,19 @@ ul {
     margin-top: -34px / 2;
     color: #ffffff;
     line-height: 34px; }
-  .product__slidershow-slider .bx-prev {
+  .product__slideshow-slider .bx-prev {
     background-position: 0 0;
     left: 0;
     padding-right: 6px;
     text-align: right; }
-    .product__slidershow-slider .bx-prev:after {
+    .product__slideshow-slider .bx-prev:after {
       border-right: 8px solid #d0e4f3;
       left: -8px; }
-  .product__slidershow-slider .bx-next {
+  .product__slideshow-slider .bx-next {
     background-position: right 0;
     right: 0;
     padding-left: 6px; }
-    .product__slidershow-slider .bx-next:after {
+    .product__slideshow-slider .bx-next:after {
       border-left: 8px solid #d0e4f3;
       right: -8px; }
 
@@ -1006,8 +1007,7 @@ ul {
   display: block;
   position: relative;
   width: 75px;
-  height: 75px;
-  overflow: hidden; }
+  height: 75px; }
   .product__slider-link img {
     width: 100%;
     position: absolute;
@@ -1049,7 +1049,6 @@ ul {
       color: #5c7b98; }
 
 .product-desc {
-  margin-bottom: 60px;
   float: right;
   width: 448px;
   margin-right: 230px; }

@@ -8,21 +8,24 @@
 			width:305px;
 		}
 }
-.product__slidershow-photo {
+
+.product__slideshow-photo {
 	position: relative;
 	height: 250px;
 	width:305px;
 	margin-bottom: 10px;
-	.product__slidershow-img {
+		img {
 			display: block;
 			position: absolute;
 			top: 0;
 			left: 0;
 			bottom: 0;
+			right: 0;
 			margin: auto;
-	}
+			}
 }
-.product__slidershow-slider {
+
+.product__slideshow-slider {
 	@include clearfix();
 	position: relative;
 
@@ -59,10 +62,6 @@
 		}
 	}
 }
-
-.product__slider-list {
-
-}
 .product__slider-item {
 	float: left;
 }
@@ -71,7 +70,6 @@
 	position: relative;
 	width: 75px;
 	height: 75px;
-	overflow: hidden;
 	img {
 		width: 100%;
 		position: absolute;
