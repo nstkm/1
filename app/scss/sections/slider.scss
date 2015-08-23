@@ -24,13 +24,14 @@
 .product__slidershow-slider {
 	@include clearfix();
 	position: relative;
-}
-}
-.product__slider-list {
 	width: 245px;
 	overflow: hidden;
 	height: 80px;
 	margin: 0 auto;
+}
+}
+.product__slider-list {
+
 }
 .product__slider-item {
 	float: left;
