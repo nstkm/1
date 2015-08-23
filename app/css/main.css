@@ -1073,3 +1073,36 @@ ul {
       font-size: 15px; }
       .product-about__text p:first-child {
         margin: 0; }
+
+.btn-up {
+  position: fixed;
+  right: 13px;
+  bottom: 250px;
+  display: block;
+  background: #00b9fe;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Elektra-bold";
+  -webkit-transition: all, 0.2s, ease-in-out;
+  -moz-transition: all, 0.2s, ease-in-out;
+  -ms-transition: all, 0.2s, ease-in-out;
+  -o-transition: all, 0.2s, ease-in-out;
+  transition: all, 0.2s, ease-in-out;
+  opacity: 1;
+  width: 77px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px; }
+  .btn-up:after, .btn-up:before {
+    content: ' ';
+    position: absolute;
+    top: -6px;
+    left: 33px;
+    border-bottom: 6px solid #00b9fe;
+    border-left: 5.5px solid transparent;
+    border-right: 5.5px solid transparent;
+    transition: all 0.3s ease-in-out; }
+  .btn-up:before {
+    border-bottom: 6px solid #fff;
+    bottom: 0; }
