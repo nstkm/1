@@ -36,23 +36,24 @@
 		font-family: "Elektra";
 		display: block;
 		position: absolute;
-		top: 50%;
+		top: 30%;
 		background-color: #d0e4f3;
 		width: 22px - 6px; //минус ширина отступа
 		height: 34px;
-		margin-top: -34px / 2;
 		color: #ffffff;
 		line-height: 34px;
+		@include transition(all, .3s , linear);
 		&:after {
 			content: '' ;
 			position: absolute;
 			border-top: 17px solid transparent;
 			border-bottom: 17px solid transparent;
 			top: 0;
-			@include transition(all, .3s , ease-in-out);
+			@include transition(all, .3s , linear);
 		}
 		&:hover {
 			background: $main-blue;
+
 		}
 	}
 
@@ -63,9 +64,6 @@
 		&:after {
 		border-right: 8px solid #d0e4f3;
 		left: -8px;
-	}
-			&:hover {
-				border-right: 8px solid #00b9fe;
 			}
 	}
 
@@ -78,12 +76,17 @@
 		}
 	}
 }
-.product__slideshow-slider .bx-next:after:hover  {
+.product__slideshow-slider .bx-prev:hover:after {
+	border-right: 8px solid #00b9fe;
+	@include transition(all, .3s);
+}
+.product__slideshow-slider .bx-next:hover:after  {
 	border-left: 8px solid #00b9fe;
+	@include transition(all, .3s);
 }
 
 .product__slider-list {
-
+	margin : 0;
 }
 .product__slider-item {
 	float: left;
