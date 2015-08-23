@@ -967,21 +967,6 @@ ul {
     bottom: 0;
     right: 0;
     margin: auto; }
-<<<<<<< HEAD
-  .product__slidershow-photo .product__slidershow-slider {
-    position: relative;
-    width: 245px;
-    overflow: hidden;
-    height: 80px;
-    margin: 0 auto; }
-    .product__slidershow-photo .product__slidershow-slider:before,
-    .product__slidershow-photo .product__slidershow-slider:after {
-      content: "";
-      display: table; }
-    .product__slidershow-photo .product__slidershow-slider:after {
-      clear: both; }
-
-=======
 
 .product__slideshow-slider {
   position: relative; }
@@ -1035,7 +1020,6 @@ ul {
 .product__slideshow-slider .bx-next:after:hover {
   border-left: 8px solid #00b9fe; }
 
->>>>>>> javascript
 .product__slider-item {
   float: left; }
 

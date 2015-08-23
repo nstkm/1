@@ -30,12 +30,6 @@
 .product__slideshow-slider {
 	@include clearfix();
 	position: relative;
-<<<<<<< HEAD
-	width: 245px;
-	overflow: hidden;
-	height: 80px;
-	margin: 0 auto;
-=======
 
 	.bx-prev, .bx-next {
 		text-decoration: none;
@@ -86,9 +80,8 @@
 }
 .product__slideshow-slider .bx-next:after:hover  {
 	border-left: 8px solid #00b9fe;
->>>>>>> javascript
 }
-}
+
 .product__slider-list {
 
 }
