@@ -2,6 +2,8 @@
 		background: $bg-footer url(../img/footer-bg.png) repeat;
 		margin-top: -$footer-height;
 		color: white;
+		min-width: 1020px;
+
 		.container {
 		padding-top: 60px;
 		position: relative;

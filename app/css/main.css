@@ -636,7 +636,7 @@ table {
     top: 12px;
     left: 11px; }
 
-/* выплывашечка */
+/* всплывашечка */
 .header__basket-list {
   display: none;
   background: white;
@@ -713,7 +713,8 @@ table {
 .footer {
   background: #613993 url(../img/footer-bg.png) repeat;
   margin-top: -228px;
-  color: white; }
+  color: white;
+  min-width: 1020px; }
   .footer .container {
     padding-top: 60px;
     position: relative;
@@ -854,7 +855,7 @@ body {
 .wrapper {
   position: relative;
   min-height: 100%;
-  min-width: 1010px;
+  min-width: 1020px;
   height: auto !important;
   overflow: hidden; }
   .wrapper:after {
