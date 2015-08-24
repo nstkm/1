@@ -956,10 +956,11 @@ ul {
 .product__slideshow-photo {
   position: relative;
   height: 250px;
-  max-width: 305px;
-  max-height: 238px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  width: 307px; }
   .product__slideshow-photo img {
+    max-height: 250px;
+    max-width: 307px;
     display: block;
     position: absolute;
     top: 0;
